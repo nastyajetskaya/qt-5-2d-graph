@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
     if (graph_area->parse_command_line(argc, argv)) {
         QMessageBox::warning(0, "Wrong input arguments!",
                              "Wrong input arguments!");
+        printf("Usage: %s a b n k\n", argv[0]);
         return -1;
     }
 
